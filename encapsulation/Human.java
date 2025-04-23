@@ -4,9 +4,21 @@ public class Human {
     private String name;
     private int age;
 
+
+
+    Human(String name,int age){
+        this.setName(name);
+        this.setAge(age);
+    }
+
+    Human(){     
+    }
+
+
+
     //getter for name
     public String getName() {
-        System.out.println("The name is "+this.name);
+        // System.out.println("The name is "+this.name);
         //this keyword is used to refer the current class instance variable
         return this.name;
     }
@@ -17,7 +29,7 @@ public class Human {
 
     //getter for age
     public int getAge(){
-        System.out.println("The age is "+this.age);
+        // System.out.println("The age is "+this.age);
         return this.age;
     }
 

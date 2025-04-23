@@ -5,18 +5,16 @@ public class ClassA {
     //     Human h=new Human();
     //     h.setName("John Doe");
     //     System.out.println("Name: " + h.getName());
-
     //     h.setAge(200);
     //     System.out.println("Age: " + h.getAge());
-
     // }
 
     void  objectLoader(){
-        Human h=new Human();
+        Human h=new Human("Ram",900);
         h.setName("John Doe");
         System.out.println("Name: " + h.getName());
 
-        h.setAge(200);
+        // h.setAge(20);
         System.out.println("Age: " + h.getAge());
     }
 }
