@@ -1,7 +1,7 @@
 package inheritance;
 
 public class SubCalculator extends Calculator{
-    SubCalculator(){
+   public SubCalculator(){
         System.out.println("In subcalculator default constructor");
     }
 

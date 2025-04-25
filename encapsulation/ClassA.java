@@ -9,7 +9,7 @@ public class ClassA {
     //     System.out.println("Age: " + h.getAge());
     // }
 
-    void  objectLoader(){
+    public void  objectLoader(){
         Human h=new Human("Ram",900);
         h.setName("John Doe");
         System.out.println("Name: " + h.getName());

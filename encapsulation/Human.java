@@ -3,6 +3,7 @@ package encapsulation;
 public class Human {
     private String name;
     private int age;
+    protected String title="Jha";
 
 
 
@@ -11,7 +12,7 @@ public class Human {
         this.setAge(age);
     }
 
-    Human(){     
+    public Human(){     
     }
 
 
