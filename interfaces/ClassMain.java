@@ -1,0 +1,44 @@
+package interfaces;
+interface Computer{
+    int a = 20;  // by default- public static final
+    void code(); // by default- public abstract
+}
+class Desktop implements Computer{
+    
+    public void code(){
+        System.out.println("Code in Desktop");
+    }
+}
+class Laptop implements Computer{
+    public void code(){
+        System.out.println("Code in Laptop "+Computer.a);
+    }
+}
+
+class Macbook implements Computer{
+    public void code(){
+        System.out.println("Code in MacBook ");
+    }
+}
+class Developer{
+
+    public void devJob(Computer lap){
+        lap.code();
+        System.out.println("In the Developer class that will execute the code function ");
+    }
+}
+public class ClassMain {
+
+
+    public static void main(String[] args){
+        Computer lap=new Laptop();
+        Computer desk=new Desktop();
+        Computer mac=new Macbook();
+        Developer dev=new Developer();
+        dev.devJob(mac);
+        dev.devJob(desk);
+        dev.devJob(lap);
+       
+        
+    }
+}
