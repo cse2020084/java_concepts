@@ -2,7 +2,7 @@ package inheritance;
 
 public class Calculator {
     Calculator(){
-        System.out.println("IN Calculator default constructor"+this);
+        System.out.println("IN Calculator default constructor "+this);
     }
     Calculator(int a, int b){
         this();

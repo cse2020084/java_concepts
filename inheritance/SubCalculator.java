@@ -6,7 +6,6 @@ public class SubCalculator extends Calculator{
     }
 
     SubCalculator(int a,int b){
-        
         super(a,b);
         System.out.println("In subcalculator parameterized constructor"+this);
 

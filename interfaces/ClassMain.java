@@ -1,5 +1,8 @@
 package interfaces;
-interface Computer{
+interface Base{
+    String version="1-1";
+}
+interface Computer extends Base{
     int a = 20;  // by default- public static final
     void code(); // by default- public abstract
 }
@@ -22,8 +25,8 @@ class Macbook implements Computer{
 }
 class Developer{
 
-    public void devJob(Computer lap){
-        lap.code();
+    public void devJob(Computer dev){
+        dev.code();
         System.out.println("In the Developer class that will execute the code function ");
     }
 }
@@ -38,6 +41,7 @@ public class ClassMain {
         dev.devJob(mac);
         dev.devJob(desk);
         dev.devJob(lap);
+        System.out.println(mac.version);
        
         
     }
