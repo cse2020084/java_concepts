@@ -42,6 +42,17 @@ public class ClassMain {
         dev.devJob(desk);
         dev.devJob(lap);
         System.out.println(mac.version);
+
+        /*
+         * If you write:
+            Desktop desk = new Desktop();
+            //  This will cause an error below:
+            desk = new Laptop(); // Incompatible types
+            but with
+            Computer dev = new Desktop();
+            dev = new Laptop(); //  Totally fine
+
+         */
        
         
     }
