@@ -24,6 +24,9 @@ public class ClassMain {
         ///static inner classes for utility
         int ans=Math.Calculation.Square(10);
         System.out.println("Square of a "+ans);
+
+
+
        
      }
 }
