@@ -9,7 +9,11 @@ class Counter{
 public class DemoA {
     public static void main(String[] args) throws InterruptedException {
         
-
+        /*
+         * Lambda expression of Functional Interface/anon inner class implementation
+         * Runnable is functional Interface
+         * and with its constructor remain inner class
+         */
         Runnable obj1=()-> {
             for(int i=0;i<10000;i++)   Counter.increment();
         };
@@ -22,7 +26,10 @@ public class DemoA {
 
         t1.start();
         t2.start();
-
+        /*
+         * Here join is for pausing main thread, 
+         * till t1 and t2 get complete
+         */
         t1.join();
         t2.join();
 

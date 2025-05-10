@@ -8,7 +8,7 @@ public class Calculator {
         this();
         this.setA(a);
         this.setB(b);
-        System.out.println("IN calculator parametrixed constructor ");
+        System.out.println("IN calculator parametrixed constructor "+this);
     }
 
     private int a;
