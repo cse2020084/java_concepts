@@ -2,6 +2,12 @@ package innerclasses;
 
 public class ClassMain {
 
+   static class A{
+      void a(){
+         System.out.println("a");
+      }
+   }
+
      public static void main(String[] args) {
         Car obj=new Car();
         // System.out.println("model "+obj.model);
@@ -25,6 +31,9 @@ public class ClassMain {
         int ans=Math.Calculation.Square(10);
         System.out.println("Square of a "+ans);
 
+
+        A s=new A();
+        s.a();
 
 
        
