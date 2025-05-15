@@ -68,7 +68,7 @@ public class Comparators {
         /*
          * Now try to  switch and run sort with and without com , then you will see how c 
          */
-        Collections.sort(l,compareById);
+        Collections.sort(l);
         Iterator<Student> i=l.iterator();
         while(i.hasNext()) System.out.println(i.next()+" ");
 

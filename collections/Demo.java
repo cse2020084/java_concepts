@@ -13,7 +13,7 @@ public class Demo {
         Collections.sort(obj);
 
         Iterator<Integer> e=obj.iterator();
-        // while(e.hasNext()) System.out.println(e.next()+" ");
+        while(e.hasNext()) System.out.println(e.next()+" ");
 
 
         /*
