@@ -7,7 +7,7 @@ import java.util.LinkedList;
 
 class HashMap<K,V>{
     private LinkedList<Node>[] bucketArray; // array of linkedlist of nodes
-    private final int DEFAULT_INITIAL_SIZE=3;
+    private final int DEFAULT_INITIAL_SIZE=16;
     private final float DEFAULT_LOAD_FACTOR=0.75f;
     private int size=0;
 
@@ -65,6 +65,11 @@ class HashMap<K,V>{
     public void put(K key, V value){
         int hashKey=this.hashFunction( key);
         LinkedList<Node> currList=bucketArray[hashKey];
+        /**
+         * for concurrent hashmap, below if else statement including index initilization part 
+         *  will be under synchronized(currList){...} block
+         * for maintaining concurrency
+         */
         int index=traverseLinkedList(key,currList);
             if(index==-1){
                 Node newNode=new Node(key,value);
